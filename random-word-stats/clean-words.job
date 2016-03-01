@@ -1,0 +1,7 @@
+type=command
+command=hadoop fs -rm -r -f random-words
+command.1=hadoop fs -rm -r -f word-count
+command.2=hadoop fs -rm -r -f word-mean
+command.3=hadoop fs -rm -r -f word-median
+env.HADOOP_CONF_DIR=/etc/hadoop/conf
+env.HADOOP_PREFIX=/usr/lib/hadoop

@@ -1,0 +1,4 @@
+# goodbye.job
+type=command
+dependencies=hello
+command=echo "Goodbye World!" 
