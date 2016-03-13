@@ -10,6 +10,5 @@ EXAMPLES_JAR="${MAPREDUCE_BASE}/hadoop-mapreduce-examples-2.6.0-cdh5.4.2.jar"
 INPUT_DIR="random-words"
 OUTPUT_DIR="word-median"
 
-${HADOOP_BIN} jar ${EXAMPLES_JAR} wordcount ${INPUT_DIR} ${OUTPUT_DIR} \
-    -Dmapreduce.randomtextwriter.totalbytes=104857600 \
-    -Dmapreduce.randomtextwriter.bytespermap=104857600
+${HADOOP_BIN} jar ${EXAMPLES_JAR} wordmedian \
+    ${INPUT_DIR} ${OUTPUT_DIR} 
